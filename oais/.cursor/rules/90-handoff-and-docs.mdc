@@ -1,0 +1,15 @@
+---
+description: Required completion format (handoff + documentation)
+alwaysApply: true
+---
+On completion, always include:
+
+- What changed / why (1-3 bullets)
+- Files touched
+- How to test (smallest relevant commands)
+- Docs updated (or why not). Run docs-update when available unless you state "no docs needed" and why.
+- Risks / rollout notes (if relevant)
+
+Documentation policy:
+- Update canonical docs (root docs + `project-documentation/**`) when behavior, workflows, endpoints, or runbooks change.
+- Never include real secrets in docs; use placeholders.

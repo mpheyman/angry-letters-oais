@@ -1,0 +1,14 @@
+---
+description: Backend architecture conventions (Express/routes/middleware/utils)
+globs: server.js,routes/**,middleware/**,utils/**
+alwaysApply: false
+---
+Align with `project-documentation/core/development-standards.md`.
+
+**Backend conventions**
+- Keep route handlers small; push shared logic into `utils/` where appropriate.
+- Prefer early returns; keep error handling consistent.
+- Preserve auth boundaries; use tokens or HMAC for protected resources as appropriate.
+- Rate limit sensitive endpoints.
+- Do not log sensitive user inputs or PII.
+

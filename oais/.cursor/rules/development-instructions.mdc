@@ -1,0 +1,13 @@
+---
+description: Deprecated. Use the split rules in this directory.
+alwaysApply: false
+---
+This rule is deprecated.
+
+Use:
+- `00-foundation.mdc`
+- `10-security.mdc`
+- `20-backend-architecture.mdc`
+- `30-db-migrations.mdc`
+- `40-frontend-csp-ui.mdc`
+- `90-handoff-and-docs.mdc`

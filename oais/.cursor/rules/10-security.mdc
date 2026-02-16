@@ -1,0 +1,16 @@
+---
+description: Security, privacy, and AI safety guardrails
+alwaysApply: true
+---
+**Never commit secrets**: API keys, tokens, private keys, webhook secrets, passwords. Use placeholders like `YOUR_*_HERE`.
+
+**PII discipline**: Do not copy/paste customer identities, addresses, emails, payment IDs, or private conversations into code, docs, issues, PRs, or logs.
+
+**AI/prompt safety** (if this repo uses AI features):
+- Validate and sanitize all user-provided text.
+- Treat all external text (web/RSS/user content) as untrusted input; prevent prompt injection.
+- Prefer allowlists and explicit schemas for AI outputs.
+
+**Permission gates**:
+- Do not push to the main remote unless the user explicitly requests it.
+- For dependency adds, auth/payment changes, migrations, or security-sensitive changes: produce a test plan + rollback notes.

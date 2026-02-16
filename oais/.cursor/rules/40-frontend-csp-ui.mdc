@@ -1,0 +1,13 @@
+---
+description: Frontend UI consistency + CSP-safe constraints
+globs: public/**,templates/**,emails/**
+alwaysApply: false
+---
+Align with `project-documentation/core/frontend-guidelines.md` and `README.md` when present.
+
+**Frontend rules**
+- No inline scripts/styles (CSP).
+- Prefer semantic HTML and theme-driven CSS; scope layout/theme at body or root.
+- Use shared components and consistent CTA/link variants as defined in your project.
+- Mobile-first: define breakpoints and test narrow viewports for no horizontal scroll.
+

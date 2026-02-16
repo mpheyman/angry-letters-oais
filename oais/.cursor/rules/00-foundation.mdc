@@ -1,0 +1,10 @@
+---
+description: Core project principles + where to read first
+alwaysApply: true
+---
+Follow `AGENTS.md` and `README.md` first, then `project-documentation/INDEX.md` for deeper runbooks.
+
+**Project non-negotiables (customize for your repo)**
+- Security/privacy first; never add or paste real secrets.
+- Add your stack and product constraints here (e.g. strict CSP, Docker-first, Postgres-first, brand/UX alignment).
+- Point to your canonical vision/design doc and frontend guidelines if you have them.

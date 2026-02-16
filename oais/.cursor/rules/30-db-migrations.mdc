@@ -1,0 +1,13 @@
+---
+description: Postgres + migrations discipline
+globs: migrations/**,db/**
+alwaysApply: false
+---
+Align with `project-documentation/core/development-standards.md` and `project-documentation/core/configuration.md`.
+
+**Migrations**
+- Use SQL migrations in `migrations/` (keep them small and focused).
+- Include safe defaults; avoid destructive operations without an explicit plan.
+- Provide validation steps: queries to confirm schema/data correctness.
+- Prefer DB storage over JSON files for product data.
+
